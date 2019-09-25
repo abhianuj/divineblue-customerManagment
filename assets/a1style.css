@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 8vh 92vh;
+    background-color: #efefef;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+#left{
+    grid-column: 1/3;
+    grid-row:1/3;
+    width: 20%;
+    height: 100%;
+    background-color: #28292b;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #F0F0F0;
+    padding: 0 2vh;
+    line-height: 2.2rem;
+    position: fixed;
+}
+#image{
+    height: 11vh;
+    margin: 17vh 0 5vh 0;
+}
+#top{
+    grid-column: 3/11;
+    grid-row: 1/2;
+    border-bottom: 1px solid rgba(22,22,22,0.2);
+    box-shadow: 1px 1px 28px 1px  rgba(77,77,77,0.1);
+    color: #444444;
+    font-size: 2rem;
+    line-height: 3.8rem;
+    padding-left: 1vw;
+    background: -webkit-linear-gradient(#70a8f1, #034296);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dash{
+    grid-column: 3/11;
+    grid-row: 2/3;
+    margin: 10vh 17vh;
+}
+#dash h1{
+    font-weight: normal;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: rgb(255,190,190);
+    border-radius: 4px;
+    border: 1px solid rgba(190,88,88,0.7);
+    line-height: 3.2rem;
+    margin-bottom: 4vh;
+    width: 49vw;
+}
+#dash #data2{
+    background-color: rgb(210,255,210);
+    border: 1px solid rgba(88,190,88,0.7);
+}
+#dash form input{
+    display: block;
+    border: 1px solid rgba(44,44,44,0.2);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    margin-top: 2vh;
+    width: 49vw;
+    padding-left: 2vh;
+    transition: all 0.2s;
+}
+#dash form .dateone{
+    display: inline-block;
+    width: 38vh;
+}
+#dash form label{
+    display: block;
+}
+#dash form input[name="issuedate"]{
+    margin-left: 10vh;
+}
+#dash form input[name="surv1"]{
+    margin-left: 5vh;
+}
+#dash form input[name="surv2"]{
+    margin-left: 4.2vh;
+}
+#dash form input[name="certexp"]{
+    margin-left: 2.2vh;
+}
+#dash form input[type="submit"]{
+    margin: 5vh 0 11vh 41vh;
+    width: 20vh;
+    background-color: rgba(225, 90, 90);
+    color: white;
+    border: none;
+}
+#dash form input:focus{
+    box-shadow: 1px 1px 22px 2px #e0e0e0;
+    outline: none;
+}

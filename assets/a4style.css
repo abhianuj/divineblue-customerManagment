@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 8vh 92vh;
+    background-color: #efefef;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+#left{
+    grid-column: 1/3;
+    grid-row:1/3;
+    width: 20%;
+    height: 100%;
+    background-color: #28292b;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #F0F0F0;
+    padding: 0 2vh;
+    line-height: 2.2rem;
+    position: fixed;
+}
+#image{
+    height: 11vh;
+    margin: 17vh 0 5vh 0;
+}
+#top{
+    grid-column: 3/11;
+    grid-row: 1/2;
+    border-bottom: 1px solid rgba(22,22,22,0.2);
+    box-shadow: 1px 1px 28px 1px  rgba(77,77,77,0.1);
+    color: #444444;
+    font-size: 2rem;
+    line-height: 3.8rem;
+    padding-left: 1vw;
+    background: -webkit-linear-gradient(#70a8f1, #034296);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dash{
+    grid-column: 3/11;
+    grid-row: 2/3;
+    margin: 10vh 17vh;
+    
+}
+#dates{
+    font-size: 1.2rem;
+}
+#dates span{
+    font-weight: bold;
+}
+#dash label{
+    font-size: 1.2rem;
+}
+#dash form input{
+    width: 20vh;
+    line-height: 1.9rem;
+    margin-left: 2vh;
+    border: 1px solid rgba(44,44,44,0.2);
+    color: #444444;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#dash form input[type="submit"]{
+    border: none;
+    width: 11vh;
+    color: #fefefe;
+    border-radius: 4px; 
+    background: linear-gradient(45deg, #70a8f1, #034296);
+    line-height: 2rem;
+    transition: all 0.2s;
+    letter-spacing: 0.1rem;
+}
+#dash form input[type="submit"]:hover{
+    box-shadow: 2px 2px 7px 5px rgba(44,44,44,0.1);
+}
+#dash a, #dash #header{
+    display: block;
+    line-height: 2.5rem;
+    border-bottom: 1px solid rgba(44,44,44,0.2);
+    text-align: center;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: #444444;
+}
+#dash a:hover{
+    background-color: #555555;
+    color: #f4f4f4;
+    border-bottom: 1px solid #555555;
+}
+#dash div div{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#dash a div, #dash div div{
+    display: inline-block;
+    text-align: center;
+}
+#dash a .srno, #dash div .srno{
+    width: 7vh;
+}
+#dash a .compname, #dash div .compname{
+    width: 28vh;
+}
+#dash a .clientname, #dash div .clientname{
+    width: 28vh;
+}
+#dash a .contact, #dash div .contact{
+    width: 20vh;
+}
+#dash a .issuedate, #dash div .issuedate{
+    width: 18vh;
+}
+#dash a .certexp, #dash div .certexp{
+    width: 24vh
+}
