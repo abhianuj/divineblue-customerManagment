@@ -1,9 +1,9 @@
 # divineblue-customerManagment
 A simple express app for divineBlue's Customer managment.
 
-database used: mySql
-database name: bookdb
-table name: divinedb
+database used: mySql<br>
+database name: bookdb<br>
+table name: divinedb<br>
 ```
 +------------+--------------+------+-----+---------+----------------+
 | Field      | Type         | Null | Key | Default | Extra          |
