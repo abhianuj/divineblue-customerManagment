@@ -4,6 +4,7 @@ A simple express app for divineBlue's Customer managment.
 database used: mySql
 database name: bookdb
 table name: divinedb
+```
 +------------+--------------+------+-----+---------+----------------+
 | Field      | Type         | Null | Key | Default | Extra          |
 +------------+--------------+------+-----+---------+----------------+
@@ -22,3 +23,4 @@ table name: divinedb
 | cb         | varchar(220) | YES  |     | NULL    |                |
 | contact    | bigint(20)   | YES  |     | NULL    |                |
 +------------+--------------+------+-----+---------+----------------+
+```
